@@ -1,5 +1,5 @@
 function sendMail(contactForm) {
-    emailjs.sendForm("service_kcg0vxp", "resume-rosie", {
+    emailjs.sendForm("service_kcg0vxp", "resume", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
         "project_request": contactForm.projectsummary.value
@@ -11,6 +11,5 @@ function sendMail(contactForm) {
         function(error) {
             console.log("FAILED", error);
         });
-        return false;  // To block from loading a new page
 
 }
